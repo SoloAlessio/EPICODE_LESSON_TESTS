@@ -1,22 +1,31 @@
-let frutto = "pera"
+console.log("\n");
 
-switch (frutto){
-    case "mela": 
-        console.log("è una mela"); 
-        break;
+// Array
 
-    case "pera": 
-        console.log("è una pera"); 
-        break;
+let array = [
+    ["Alessio", "Marco", "Giovanni", "Mattia", "Francesco"],
+    [19, 31, 25, 18, 24 ],
+    ["Studente", "Impiegato", "Camionista", "Studente", "Studente"],
+    [1297, 5683, 2039, 1095, 2835]
+] 
 
-    case "banana": 
-        console.log("è una banana"); 
-        break;
+array[0].push("Luca", "Giulio")
+array[1].push(19, 18)
+array[2].push("Studente", "Medico")
+array[3].push(1485, 5896)
 
-    case "caffe": 
-        console.log("è una caffe"); 
-        break;
+let Check = array[0].includes("Paolo")
+/* console.log(Check); */
+/* console.log(array[0].join(" - ")); */
 
-    default: 
-        console.log("non è un frutto");
+for (let i = 0; i < array[0].length; i++) {
+    console.log("Studente N°:", i+1, "\n");
+    console.log("Nome:   ", array[0][i]);
+    console.log("Età:    ", array[1][i]);
+    console.log("Lavoro: ", array[2][i]);
+    console.log("ID:     ", array[3][i]);
+    console.log("\n");
+ 
 }
+
+
