@@ -3,7 +3,7 @@ import logo from "../logo.svg";
 
 export default function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="light" data-bs-theme="light">
       <Container>
         <Navbar.Brand href="#home">
           <img
