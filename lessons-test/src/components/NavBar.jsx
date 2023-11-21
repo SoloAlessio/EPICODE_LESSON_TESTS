@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <Navbar expand="lg" bg="light" data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src={logo}
             alt="react logo"
