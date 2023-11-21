@@ -13,7 +13,12 @@ export default function Jumbotron() {
   grid.register();
   const key = "a6d4881a-88bc-4204-b41e-bfe3d552cff2";
   const [players, setPlayers] = useState([]);
+  const [date, setDate] = useState("");
   const [searchQuery, setSearchquery] = useState("");
+
+  useEffect(() => {
+    setDate(new Date().toLocaleString());
+  }, [date]);
 
   useEffect(() => {
     fetch("https://api.pokemontcg.io/v2/cards", {
@@ -26,6 +31,7 @@ export default function Jumbotron() {
 
   return (
     <Container className="p-5 h-100">
+      <p className="fw-semibold text-center">{date}</p>
       <Form className="mb-5">
         <Row>
           <Form.Group as={Col} controlId="formGridEmail">
